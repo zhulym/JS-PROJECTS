@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CALCULATOR</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	</script>
+</head>
+
+<body>
+	<audio id="sound1" src="./images/click.mp3"></audio>
+	<div class="container">
+		<div class="logo">
+			<div class="logo__image">
+				<img class="logo__image-item" src="./images/logo.png" alt="" />
+			</div>
+			<div class="logo__text">CALCULATOR</div>
+		</div>
+		<div class="result_container">
+			<input disabled value="0" type="text" id="result" class="result_input" maxlength="14" />
+		</div>
+		<div class="button_container">
+			<div class="operators_1">
+				<div class="reset_buttons">
+					<button id='reset' class='operator'>C</button>
+					<button id='reset_memory' class='operator'>CE</button>
+				</div>
+				<button id='square' class='operator'>&#8730;</button>
+				<button id='percent' class='operator'>%</button>
+				<button id='squaring' class='operator'>x<sup>2</sup></button>
+			</div>
+
+			<div class="numbers_container">
+				<button class='numbers'>7</button>
+				<button class='numbers'>8</button>
+				<button class='numbers'>9</button>
+				<button class='numbers'>4</button>
+				<button class='numbers'>5</button>
+				<button class='numbers'>6</button>
+				<button class='numbers'>1</button>
+				<button class='numbers'>2</button>
+				<button class='numbers'>3</button>
+				<button class='numbers'>0</button>
+			</div>
+			<div class="operators_2">
+				<button class='operator' value="*">&#215;</button>
+				<button class='operator' value="-">-</button>
+				<button class='operator' value="+">+</button>
+				<button id='divide' class='operator' value="/">&#247;</button>
+				<button id="equal" class='operator' value="=">=</button>
+
+			</div>
+			<div class="operators_3">
+				<button id='dot' class='operator' value=".">.</button>
+				<button id='change_sign' class='operator' value="+/-">&#177;</button>
+			</div>
+		</div>
+		<div class="small_display"></div>
+	</div>
+
+
+	<script src="./js/script.js"></script>
+</body>
+
+</html>

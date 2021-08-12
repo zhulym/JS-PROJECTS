@@ -1,0 +1,140 @@
+body, html {
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*, *::before, ::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol,li {
+    list-style-type: none;
+}
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.wrapper {
+    padding: 30px;
+    min-height: 100%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 30px 0;
+}
+
+.image-slider {
+    padding: 30px 0 70px 0;
+}
+
+.image-slider__wrapper{
+    
+}
+.image-slider__slide{
+
+}
+.image-slider__image{
+    text-align: center;
+}
+
+.image-slider__image img {
+    max-width: 100%;
+}
+/*=============================== Settings =================================*/
+ .image-slider{
+    width: 800px;
+}
+
+
+/*===== arrows =====*/
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 60px;
+    color: rgba(207, 207, 207, 0.3);
+    font-weight: 900;
+}
+
+/*===== Pagination and scroll =====*/
+.image-slider .swiper-pagination{  /*расположение точек*/
+    bottom: 30px;
+}
+
+.image-slider .swiper-pagination-bullet{  /*стиль точек*/
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    background-color: #cfcfcf;
+}
+
+.image-slider .swiper-pagination-fraction{  /*стиль нумерованной навигации со словами*/
+    color: #cfcfcf;
+    font-size: 20px;
+}
+
+.image-slider .swiper-pagination-progressbar-fill {  /*стиль навигационной полосы*/
+    background: #cfcfcf;
+}
+
+.image-slider .swiper-scrollbar-drag{  /*стиль скрола*/
+    cursor: pointer;
+    background-color: #cfcfcf;
+}
+
+/*===== Multi row =====*/
+/* .image-slider{
+    height: 600px;
+}
+
+.image-slider .swiper-slide{
+    height: calc((100% - 30px) / 2);
+    overflow: hidden;
+} */
+
+
+/*===== Need for vertical slider =====*/
+/* .image-slider {
+    padding: 0px
+    height: 700px;
+} */
+
+/*===== Need for show at the same time PROGRESSBAR AND PAGINATION =====*/
+.image-slider__fraction{
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #cfcfcf;
+}
+.image-slider__current{
+
+}
+
+.image-slider__sepparator{
+    margin: 0 15px;
+}
+.image-slider__total{
+    
+}
+
+
+
+
+

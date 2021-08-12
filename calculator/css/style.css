@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #282c34;
+    box-sizing: border-box;
+    font-family: 'Bungee Inline', cursive;
+}
+
+.container {
+    position: relative;
+    width: 377px;
+    height: 600px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 3px #01F706;
+    margin: 20px auto;
+    background: url('../images/Untitled.jpg');
+    background-color: rgb(167, 167, 167);
+    user-select: none;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+}
+
+.button_container {
+    padding: 4px 0 0 3px;
+}
+
+.logo {
+    height: 130px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    background: url('../images/Untitled.jpg');
+}
+
+.logo__text {
+    position: relative;
+    top: -100px;
+    color: #fff;
+    user-select: none;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.logo img {
+    position: relative;
+    top: -30px;
+    max-width: 100%;
+}
+
+.result_container {
+    height: 80px;
+    padding: 5px;
+}
+
+input[type="text"] {
+    background-color: #000000;
+    color: #01F706;
+    text-shadow: 0 0 10px #fbfcfb;
+    border-radius: 5px;
+    width: 98%;
+    height: 75px;
+    margin-bottom: 2px;
+    text-align: right;
+    line-height: 75px;
+    font-size: 34px;
+    font-family: 'Orbitron', sans-serif;
+    outline: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+button {
+    color: rgb(0, 0, 0);
+    width: 90px;
+    height: 70px;
+    margin-bottom: 2px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.05s ease;
+    background-color: rgb(88, 88, 88);
+    border-radius: 5px;
+    outline: none;
+}
+
+button:active {
+    background-color: rgb(141, 141, 141);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px #01F706;
+}
+
+sup {
+    font-size: 12px;
+}
+
+.reset_buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#reset_memory, #reset {
+    height: 34px;
+    font-size: 22px;
+}
+
+#divide {
+    position: relative;
+    bottom: 288px;
+}
+
+#equal {
+    position: relative;
+    top: -72px;
+}
+
+#squaring {
+    position: relative;
+    right: 93px;
+    margin-left: 4px;
+}
+
+#square, #percent {
+    margin-left: 3px;
+    height: 34px;
+}
+
+#percent {
+    position: relative;
+    top: 36px;
+    right: 93px;
+}
+
+.operators_1 {
+    display: flex;
+}
+
+.operators_2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2px;
+}
+
+.operators_3 {
+    position: relative;
+    top: -144px;
+    left: 94px;
+    width: 185px;
+}
+
+.numbers_container {
+    float: left;
+    width: 278px;
+}
+
+.small_display {
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    font-weight: 600;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+    color: #01F706;
+}

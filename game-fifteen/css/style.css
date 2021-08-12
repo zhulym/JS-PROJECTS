@@ -1,0 +1,180 @@
+* {
+    -webkit-elem-sizing: border-elem;
+    elem-sizing: border-elem;
+    font-family: 'Roboto', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: -webkit-elem;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-elem-orient: vertical;
+    -webkit-elem-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-elem-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgb(61, 58, 58);
+    font-size: 16px;
+}
+
+h1,
+p {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: calc(3rem + 3vmin);
+    padding: 0 3vmin;
+}
+
+p {
+    font-size: calc(2rem + 2vmin);
+}
+
+.field {
+    width: 80vmin;
+    height: 80vmin;
+    display: -webkit-elem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-elem-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-elem-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    padding: 1vmin;
+}
+
+.field div {
+    width: 23%;
+    height: 23%;
+    display: -webkit-elem;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-elem-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-elem-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: calc(2rem + 2vmin);
+    border-radius: 1vmin;
+    font-weight: bold;
+}
+
+.win {
+    color: red;
+    font-weight: bolder;
+    text-align: center;
+    font-size: calc(3.5rem + 3.5vmin);
+}
+
+.win-style {
+    background-color: rgb(30, 131, 84);
+}
+
+.win-message {
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    position: absolute;
+    left: 50% - 200px;
+    top: -100%;
+    z-index: 555;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px black;
+    transition: all 1s ease;
+    text-align: center;
+    font-size: 24px;
+    vertical-align: 200px;
+    color: rgb(238, 238, 238);
+}
+
+.close {
+    position: relative;
+    display: block;
+    left: 92%;
+    top: 8px;
+    width: 10px;
+    background-color: rgb(184, 184, 184);
+    color: rgb(58, 58, 58);
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 0px 8px 2px 8px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.close:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+/*Элементы игрового поля*/
+.active {
+    background-color: #fff;
+    -webkit-elem-shadow: inset -0.26vw -0.26vw .26vw 0 rgba(150, 150, 150, .5),
+        inset .26vw .26vw .26vw 0 rgba(255, 255, 255, .5);
+    elem-shadow: inset -0.26vw -0.26vw .26vw 0 rgba(150, 150, 150, .5),
+        inset .26vw .26vw .26vw 0 rgba(255, 255, 255, .5);
+}
+
+.active:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+/*Выбранный элемент игрового поля*/
+.change {
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+
+    html,
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: calc(2rem + 2vmin);
+        padding: 0 3vmin;
+    }
+
+    p {
+        font-size: calc(1rem + 1vmin);
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    html,
+    body {
+        font-size: 12px;
+    }
+}

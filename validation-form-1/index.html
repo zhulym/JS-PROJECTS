@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML/CSS/JS</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<h2>Send data</h2>
+		<form name="myForm" class="my_form" novalidate>
+
+			<div class="form_item">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" class="form-input" placeholder="mail@mail.com" required />
+				<div class="error-message"></div>
+			</div>
+
+			<div class="form_item">
+				<label for="username">Name</label>
+				<input type="text" name="username" id="username" class="form-input" placeholder="Jack Sparrow"
+					required />
+				<div class="error-message"></div>
+			</div>
+
+			<div class="form_item">
+				<label for="about">About</label>
+				<textarea name="about" id="about" rows="4" class="form-input"></textarea>
+				<div class="error-message"></div>
+			</div>
+
+			<div class="form_item">
+				<label for="formImage">Add image</label>
+				<input id='formImage' class="form_image" accept=".jpg, .png, .gif" type="file" name="image" />
+				<div class="error-message"></div>
+				<div class="image_button">Choose File</div>
+				<div id="formPreview" class="image_preview"></div>
+			</div>
+
+			<div class="form_item">
+				<label for="formCheckbox">Mark your skills</label>
+				<div class="checkbox_items">
+					<p><input type="checkbox" name="box1" class="form_checkbox">HTML</p>
+					<p><input type="checkbox" name="box2" class="form_checkbox">CSS</p>
+					<p><input type="checkbox" name="box3" class="form_checkbox">JS</p>
+					<p><input type="checkbox" name="box4" class="form_checkbox">React</p>
+					<p><input type="checkbox" name="box5" class="form_checkbox">Angular</p>
+					<p><input type="checkbox" name="box5" class="form_checkbox">Vue</p>
+					<p><input type="checkbox" name="box5" class="form_checkbox">NodeJS</p>
+				</div>
+				<div id="error-checkbox" class="error-message"></div>
+			</div>
+
+
+
+			<input type="submit" class="submit_form" />
+		</form>
+	</div>
+
+	<script src="./js/javascript.js"></script>
+</body>
+
+</html>
