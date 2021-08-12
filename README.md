@@ -1,10 +1,10 @@
 # JS-PROJECTS
 - https://zhulym.github.io/JS-PROJECTS/calculator
 - ![Screenshot (42)](https://user-images.githubusercontent.com/75386560/129276065-1bfb9f74-2396-481f-8377-a199ba205dda.png)
-- 
+
 - https://zhulym.github.io/JS-PROJECTS/exel
 - ![Screenshot (41)](https://user-images.githubusercontent.com/75386560/129275981-8af7fe20-3949-42ae-b30c-7dfcd692e0db.png)
-- 
+
 - https://zhulym.github.io/JS-PROJECTS/game-fifteen
 - ![Screenshot (43)](https://user-images.githubusercontent.com/75386560/129276922-4c6dc6f2-54ee-496c-a3f4-7dc0c8bc0071.png)
 
