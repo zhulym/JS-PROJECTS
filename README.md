@@ -1,4 +1,10 @@
 # JS-PROJECTS
+- https://zhulym.github.io/JS-PROJECTS/slider-vertical
+- ![Screenshot (63)](https://user-images.githubusercontent.com/75386560/130436211-47e7d84a-54c1-4558-9ec0-b23ad23f0ac0.png)
+
+- https://zhulym.github.io/JS-PROJECTS/clock-analog-digit
+- ![Screenshot (64)](https://user-images.githubusercontent.com/75386560/130436472-8655e0e7-4cc9-46ab-b001-51b5fe565dd3.png)
+
 - https://zhulym.github.io/JS-PROJECTS/calculator
 - ![Screenshot (42)](https://user-images.githubusercontent.com/75386560/129276065-1bfb9f74-2396-481f-8377-a199ba205dda.png)
 
