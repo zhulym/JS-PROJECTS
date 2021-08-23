@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Clock</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="clock__container">
+    <div class="clock__content">
+      <div class="digit-clock__container">
+        <div class="digit digit-clock"></div>
+        <div class="digit digit-date"></div>
+      </div>
+      <div class="clock__border">
+        <div class="arrows arrow-center"></div>
+        <div class="arrows arrow-sec"></div>
+        <div class="arrows arrow-min"></div>
+        <div class="arrows arrow-hour"></div>
+      </div>
+      <button class="buttons dark-light-mode">Light mode</button>
+      <button class="buttons time-zone__button">Time Zones</button>
+    </div>
+  </div>
+
+  <div class="time-zone__container">
+    <div class="time-zone__item">
+      <div class="time-zone amsterdam-zone"></div>
+      <div>Amsterdam</div>
+    </div>
+    <div class="time-zone__item">
+      <div class="time-zone cuba-zone"></div>
+      <div>Cuba</div>
+    </div>
+    <div class="time-zone__item">
+      <div class="time-zone los-angeles-zone"></div>
+      <div>Los Angeles</div>
+    </div>
+    <div class="time-zone__item">
+      <div class="time-zone tokyo-zone"></div>
+      <div>Tokyo</div>
+    </div>
+    <div class="time-zone__close">&cross;</div>
+  </div>
+
+  <script src="./script/index.js"></script>
+</body>
+
+</html>

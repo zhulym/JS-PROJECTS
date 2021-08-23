@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #6a7688;
+  height: 100%;
+  font-family: "Style Script", cursive;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.slider__container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-1 {
+  background: url('../assets/images/kong.jpg') no-repeat;
+}
+
+.slide-2 {
+  background: url('../assets/images/bear-2.jpg');
+}
+
+.slide-3 {
+  background: url('../assets/images/geraf.jpg');
+}
+
+.slide-4 {
+  background: url('../assets/images/bear.jpg');
+}
+
+.slide-5 {
+  background: url('../assets/images/scorp.jpg');
+}
+
+.slider-right__container {
+  position: relative;
+  width: 75%;
+  height: 100%;
+}
+
+.slider-right__items {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-right__item {
+  display: none;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.slider-left__container {
+  position: relative;
+  width: 30%;
+  height: 100%;
+}
+
+.slider-left__items {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-left__item {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  display: none;
+}
+
+.active, .next {
+  display: block;
+}
+
+.next {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+}
+
+.slider-down__button {
+  top: 50%;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.slider-up__button {
+  bottom: 50%;
+}
+
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  color: rgb(184, 184, 184);
+  min-width: 50px;
+  width: 3vw;
+  height: 7vh;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px rgba(255, 255, 255, 0.2), inset 0 10px rgba(255, 255, 255, 0.089), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.arrow:hover {
+  opacity: 0.9;
+  background-color: rgba(119, 119, 119, 0.5);
+}
+
+.slider-up__button:active {
+  transform: translateY(-1px);
+}
+
+.slider-down__button:active {
+  transform: translateY(1px) rotate(180deg);
+}
+
+.arrow span {
+  transform: rotate(-90deg);
+}
+
+.slider-left__title, .slider-left__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 5px;
+  transform: translate(-50%, -50%);
+  color: rgb(236, 236, 236);
+}
+
+.slider-left__title {
+  top: 40%;
+  font-size: 48px;
+}
+
+.slider-left__text {
+  font-size: 28px;
+}
+
+.to-up {
+  animation: linear 0.3s top;
+}
+
+.to-down {
+  animation: linear 0.3s bottom;
+  animation-direction: reverse;
+}
+
+.from-up {
+  animation: linear 0.3s top;
+  animation-direction: reverse;
+}
+
+.from-down {
+  animation: linear 0.3s bottom;
+}
+
+@keyframes top {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+
+@keyframes bottom {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.slider__pagination {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.pagination-item {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: all 0.3s linear;
+}
+
+.active-pagination {
+  box-shadow: 0 0 15px 5px white;
+  transform: scale(1.05);
+}
+
+.pagination-item:hover {
+  cursor: pointer;
+  background-color: rgb(179, 179, 179);
+}
