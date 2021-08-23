@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #080602;
+  transition: all 0.3s ease;
+}
+
+.clock__border {
+  position: relative;
+  width: 650px;
+  height: 650px;
+  border-radius: 100%;
+  border: 10px solid rgb(27, 16, 10, 0);
+}
+
+.clock__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 1440;
+  background: url(../assets/images/serial-doctor.jpg) no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.light-mode {
+  background: url(../assets/images/serial-doctor-light.jpg) no-repeat;
+  background-size: contain;
+  background-position: center center;
+  transition: all 0.3s ease;
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 8px;
+  background-color: #22170C;
+  box-shadow: 0 0 15px #9c722f;
+  border-radius: 10px;
+  transform-origin: right;
+  transform: rotate(90deg);
+  transition: all 0.2s ease;
+  transition-timing-function: cubic-bezier(0.15, 0.57, 0.46, 0.84);
+}
+
+.arrow-hour {
+  height: 12px;
+}
+
+.arrow-center {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: none;
+  z-index: 5;
+}
+
+.arrow-sec {
+  background-color: rgb(124, 32, 32);
+  height: 4px;
+}
+
+.digit-clock__container {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  text-align: center;
+  font-size: 36px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: rgba(97, 64, 23, 0.3);
+  color: #c77d1d;
+  font-family: 'Playball', cursive;
+}
+
+.buttons {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 7px;
+  background-color: rgb(199, 125, 29, 0.6);
+  border-radius: 7px;
+  color: rgb(224, 224, 224);
+  font-family: 'Playball', cursive;
+  letter-spacing: 3px;
+  font-size: 18px;
+  border: none;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.buttons:hover {
+  cursor: pointer;
+  background-color: rgb(199, 125, 29, 1);
+}
+
+.buttons:active {
+  padding: 6px;
+  cursor: pointer;
+  background-color: rgb(199, 125, 29, 1);
+}
+
+.time-zone__container {
+  position: absolute;
+  display: flex;
+  gap: 50px;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 50px;
+  background-color: rgb(199, 108, 34, 0.7);
+  font-size: 28px;
+  border-radius: 7px;
+  color: white;
+  font-family: 'Playball', cursive;
+  transition: all 0.3s ease;
+  z-index: 20;
+}
+
+.time-zone__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 14px;
+  border: 1px solid white;
+  padding: 3px 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.time-zone__close:hover {
+  cursor: pointer;
+  color: red;
+  border: 1px solid red;
+}
+
+.time-zone__button {
+  top: 60%;
+}
+
+.time-zone {
+  text-align: center;
+}
+
+.show-time-zone {
+  top: 30%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .clock__container {
+    width: 1420px;
+  }
+  .clock__border {
+    width: 650px;
+    height: 650px;
+  }
+  .digit-clock__container {
+    top: 10%;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .clock__container {
+    width: 1340px;
+  }
+  .clock__border {
+    width: 600px;
+    height: 600px;
+  }
+  .digit-clock__container {
+    top: 10%;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .clock__container {
+    width: 1180px;
+  }
+  .clock__border {
+    width: 650px;
+    height: 650px;
+  }
+  .digit-clock__container {
+    top: 20%;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .clock__container {
+    width: 980px;
+  }
+  .clock__border {
+    width: 550px;
+    height: 550px;
+  }
+  .digit-clock__container {
+    top: 25%;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .clock__container {
+    width: 740px;
+  }
+  .clock__border {
+    width: 420px;
+    height: 420px;
+  }
+  .digit-clock__container {
+    top: 30%;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .clock__container {
+    width: 100%;
+  }
+  .clock__border {
+    width: 300px;
+    height: 300px;
+  }
+  .digit-clock__container {
+    top: 35%;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .clock__container {
+    width: 100%;
+  }
+  .clock__border {
+    width: 220px;
+    height: 220px;
+  }
+  .digit-clock__container {
+    top: 40%;
+    left: 50%;
+  }
+}
