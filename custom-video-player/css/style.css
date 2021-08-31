@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Style Script", cursive;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+  background: url(../assets/images/luvr-fontan-muzei.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.video__container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.video__player {
+  position: relative;
+  line-height: 0;
+  width: 1000px;
+  height: 600px;
+  -webkit-box-shadow: 0px 0px 25px 10px black;
+          box-shadow: 0px 0px 25px 10px black;
+}
+
+.video__content {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.video__controls {
+  position: relative;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  height: 75px;
+  padding: 0 30px;
+}
+
+.video__controls.show-control {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2147483648;
+}
+
+.controls-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.controls-button:hover {
+  -webkit-filter: brightness(45%) contrast(37%);
+          filter: brightness(45%) contrast(37%);
+}
+
+.controls-button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+input[type="range"].video__progress {
+  width: 820px;
+}
+
+input[type="range"].sound__progress {
+  width: 155px;
+  background: -webkit-gradient(linear, left top, right top, from(#660606), color-stop(20%, #660606), color-stop(20%, #fff), to(#fff));
+  background: linear-gradient(to right, #660606 0%, #660606 20%, #fff 20%, #fff 100%);
+}
+
+.video__progress,
+.sound__progress {
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#660606), color-stop(0%, #660606), color-stop(0%, #fff), to(#fff));
+  background: linear-gradient(to right, #660606 0%, #660606 0%, #fff 0%, #fff 100%);
+  border: solid 1px #660606;
+  height: 5px;
+  outline: none;
+  -webkit-transition: background 450ms ease-in;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+.video__progress:hover,
+.sound__progress:hover {
+  cursor: pointer;
+}
+
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border: 2px solid #999;
+  border-radius: 50%;
+}
+
+.video__large-play-button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  outline: none;
+  -webkit-transform: translate(-50%, -50%) scale(0.7);
+          transform: translate(-50%, -50%) scale(0.7);
+  border-radius: 50%;
+  background-color: #ffffff00;
+  border: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.video__large-play-button:active {
+  -webkit-transform: translate(-50%, -50%) scale(0.97);
+          transform: translate(-50%, -50%) scale(0.97);
+}
+
+.video__large-play-button img {
+  display: block;
+  border-radius: 50%;
+  line-height: 0;
+}
+
+.video__large-play-button img:hover {
+  cursor: pointer;
+}
+
+.hide__large-button {
+  opacity: 0;
+}
+
+.speaker {
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.speaker.mute:before {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: #b3b3b3;
+  position: absolute;
+  left: -3px;
+  top: 13px;
+  border-radius: 5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-animation: showMute;
+          animation: showMute;
+}
+
+.play-back-rate {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 100;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.video-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.video__active {
+  position: relative;
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
