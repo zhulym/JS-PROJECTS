@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Video Player</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="video__container">
+
+    <div class="video__player">
+      <div class="video__content">
+        <video class="video-item video video__active" src="./assets/video/video0.mp4" height="100%" width="100%"
+          poster="./assets/images/video/poster0.jpg"></video>
+        <video class="video-item" src="./assets/video/video1.mp4" height="100%" width="100%"
+          poster="./assets/images/video/poster1.jpg"></video>
+        <video class="video-item" src="./assets/video/video2.mp4" height="100%" width="100%"
+          poster="./assets/images/video/poster2.jpg"></video>
+        <video class="video-item" src="./assets/video/video3.mp4" height="100%" width="100%"
+          poster="./assets/images/video/poster3.jpg"></video>
+        <video class="video-item" src="./assets/video/video4.mp4" height="100%" width="100%"
+          poster="./assets/images/video/poster4.jpg"></video>
+      </div>
+
+      <div class="video__controls">
+        <button class="controls-button prev-btn"><img src="./assets/images/video/prev-button.svg"
+            alt="prev-button"></button>
+        <button class="controls-button small-play"><img class="small-play__item"
+            src="./assets/images/video/small-play-button.svg" alt="small-play-button"></button>
+        <button class="controls-button next-btn"><img src="./assets/images/video/next-button.svg"
+            alt="next-button"></button>
+        <input id="video__progress" value="0" type="range" min="0" max="100" step="0.1" name="progressVideo"
+          class="video__progress ranges">
+        <button class="controls-button speaker"><img class="speaker-img" src="./assets/images/video/speaker-button.svg"
+            alt="speaker-button"></button>
+        <input id="sound__progress" value="0.2" type="range" min="0" max="1" step="0.1" name="volume"
+          class="sound__progress sound ranges">
+        <button class="controls-button fullscreen"><img src="./assets/images/video/full-screen-button.svg"
+            alt="full-screen-button"></button>
+        <div class="play-back-rate"></div>
+      </div>
+      <button class="video__large-play-button"><img src="./assets/images/video/large-play-button.png"
+          alt="large-play-button"></button>
+    </div>
+  </div>
+
+  <script src="./script/index.js">
+  </script>
+</body>
+
+</html>
