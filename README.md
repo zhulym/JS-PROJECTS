@@ -2,6 +2,9 @@
 - https://zhulym.github.io/JS-PROJECTS/slider-vertical
 - ![Screenshot (63)](https://user-images.githubusercontent.com/75386560/130436211-47e7d84a-54c1-4558-9ec0-b23ad23f0ac0.png)
 
+- https://zhulym.github.io/JS-PROJECTS/custom-video-player
+- ![Screenshot (77)](https://user-images.githubusercontent.com/75386560/131518479-21be66ca-d97c-4ba6-81ab-206349edc1a3.png)
+
 - https://zhulym.github.io/JS-PROJECTS/clock-analog-digit
 - ![Screenshot (64)](https://user-images.githubusercontent.com/75386560/130436472-8655e0e7-4cc9-46ab-b001-51b5fe565dd3.png)
 
